@@ -1,0 +1,59 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package caso1;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Aulas Heredia
+ */
+public class Caso1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        //Aqui defino las variables que voy a utilizar para el agente
+        String nombre= " ";
+        String cedula= " ";
+        String codigo= " ";
+        String sucursal_trabajo= " ";
+        String tiene_vehiculo= " ";
+        //Aqui imprimo las preguntas para que el agente ingrese sus datos 
+        nombre= JOptionPane.showInputDialog("Digite su nombre de agente de ventas:");
+        cedula= JOptionPane.showInputDialog("Digite su numero de cedula:");
+        codigo= JOptionPane.showInputDialog("Digite su codigo:");
+        sucursal_trabajo= JOptionPane.showInputDialog("Ingrese el nombre de la sucursal a la que pertenece:");
+        tiene_vehiculo= JOptionPane.showInputDialog("Posee vehiculo propio, si o no?");
+        
+        //Aqui imprimo todos los datos que el agente ingreso de su informacion
+        System.out.println("El agente " + nombre + " cedula " + cedula + " codigo " + codigo + " trabaja en la sucursal " + sucursal_trabajo + " y " + tiene_vehiculo + " tiene vehiculo");
+        
+        //Aqui asigno las variables paara los clientes
+        String nombre_cliente= " ";
+        String cedula_cliente= " ";
+        String codigo_factura= " ";
+        String monto_factura= " ";
+        String numero_mes= " ";
+        String electricos= " ";
+        String automotrices= " ";
+        String construccion= " ";
+        //Aqui imprimo las preguntas para que el agente ingrese los datos del cliente y asi pueda realzar la facturacion 
+        nombre_cliente= JOptionPane.showInputDialog("Digite el nombre del cliente:");
+        cedula_cliente= JOptionPane.showInputDialog("Digite el numero de cedula del cliente:");
+        codigo_factura= JOptionPane.showInputDialog("Ingrese el codigo de la factura del cliente:");
+        monto_factura= JOptionPane.showInputDialog("Digite el monto de la factura del cliente:");
+        numero_mes= JOptionPane.showInputDialog("Ingrese la fecha en la que esta realizando la facturacion, ingresar: dia, mes y anio:");
+        electricos= JOptionPane.showInputDialog("Ingrese la cantidad de productos electricos que lleva el cliente:");
+        automotrices= JOptionPane.showInputDialog("Ingrese la cantidad de productos automotrices que lleva el cliente:");
+        construccion= JOptionPane.showInputDialog("Ingrese la cantidad de productos de construccion que lleva el cliente:");
+        
+        //Aqui imprimo los datos que se ingresaron sobre el cliente
+        System.out.println("El cliente " + nombre_cliente + " cedula " + cedula_cliente + " con el codigo de factura " + codigo_factura + " lleva una compra de " + monto_factura + " en la fecha " + numero_mes + " con una cantidad de productos electronicos de " + electricos + ", de automotrices " + automotrices + " y productos para construccion de " + construccion );
+                     
+        }
+    }
